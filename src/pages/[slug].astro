@@ -2,58 +2,54 @@
 // 1. Scan the directory and pull all pages managed by TinaCMS
 const allPageFiles = import.meta.glob('../content/pages/*.md', { eager: true });
 
-// 2. Fetch the Global Configuration data directly from the JSON file
+// 2. Fetch the Global Configuration data for the header/footer
 const globalFiles = import.meta.glob('../content/global/settings.json', { eager: true });
 const globalData: any = Object.values(globalFiles)[0];
-
-if (!globalData) {
-  throw new Error("Missing src/content/global/settings.json file! Please create it.");
-}
 const { header, footer } = globalData.default;
 
-// 3. Flatten the raw markdown data into a clean working array for navigation
-const flatPages = Object.entries(allPageFiles).map(([filePath, fileData]: [string, any]) => {
+// 3. Generate routes for every single file in the pages directory
+export async function getStaticPaths() {
+  const pages = import.meta.glob('../content/pages/*.md', { eager: true });
+  
+  return Object.entries(pages).map(([filePath, fileData]: [string, any]) => {
+    const fileName = filePath.split('/').pop()?.replace('.md', '') || '';
+    return {
+      params: { slug: fileName }, // This maps the URL path (e.g., /about)
+      props: { fileData }         // This passes the markdown content down
+    };
+  });
+}
+
+// 4. Retrieve the parameters from the active URL slug
+const { slug } = Astro.params;
+const { fileData } = Astro.props;
+
+// 5. Setup the Navigation Tree (Exactly the same logic as the homepage)
+const flatPages = Object.entries(allPageFiles).map(([filePath, data]: [string, any]) => {
   const fileName = filePath.split('/').pop()?.replace('.md', '') || '';
   return {
-    label: fileData.frontmatter.title || fileName,
+    label: data.frontmatter.title || fileName,
     url: fileName === 'home' ? '/' : `/${fileName}`,
-    order: fileData.frontmatter.menuOrder ?? 99,
-    parent: fileData.frontmatter.parentMenu || null
+    order: data.frontmatter.menuOrder ?? 99,
+    parent: data.frontmatter.parentMenu || null
   };
 });
 
-// 4. Build the nested Parent/Child Tree array
 const navMenu: any[] = [];
-
-flatPages
-  .filter(page => !page.parent)
-  .sort((a, b) => a.order - b.order)
-  .forEach(parent => {
-    navMenu.push({ ...parent, children: [] });
-  });
-
+flatPages.filter(p => !p.parent).sort((a, b) => a.order - b.order).forEach(parent => {
+  navMenu.push({ ...parent, children: [] });
+});
 flatPages.forEach(page => {
   if (page.parent) {
     const parentMenu = navMenu.find(p => p.label.toLowerCase() === page.parent.toLowerCase());
     if (parentMenu) parentMenu.children.push(page);
   }
 });
+navMenu.forEach(p => p.children.sort((a: any, b: any) => a.order - b.order));
 
-navMenu.forEach(parent => {
-  parent.children.sort((a: any, b: any) => a.order - b.order);
-});
-
-// 5. Grab 'home.md' content specifically to show on screen
-const homepageFile: any = Object.values(allPageFiles).find(
-  (file: any) => file.file.endsWith('home.md')
-);
-
-if (!homepageFile) {
-  throw new Error("Missing src/content/pages/home.md!");
-}
-
-const { heroTitle, heroTagline } = homepageFile.frontmatter;
-const Content = homepageFile.Content;
+// 6. Extract page-specific body text
+const { heroTitle, heroTagline } = fileData.frontmatter;
+const Content = fileData.Content;
 ---
 
 <html lang="en">
