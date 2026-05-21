@@ -7,8 +7,10 @@
   },
   "scripts": {
     "dev": "tinacms dev -c \"astro dev\"",
+    "start": "astro dev",
     "build": "tinacms build && astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
     "@tinacms/cli": "^2.3.1",

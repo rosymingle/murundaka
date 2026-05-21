@@ -1,14 +1,27 @@
 import { defineConfig } from "tinacms";
 
+const branch = process.env.VERCEL_GIT_COMMIT_REF || "main";
+
+// Force local-only mode by clearing these out temporarily
+const clientId = "40f8cbe7-33bd-4a2d-afd5-753a41502a89"; 
+const token = "1c732fc862902a4e3a6fcb2efbb1bf2615950e8b";
+
 export default defineConfig({
-  branch: "main",
-  clientId: null, 
-  token: null,       
+  branch,
+  clientId, 
+  token,       
   build: {
     outputFolder: "admin",
     publicFolder: "public",
   },
+  media: {
+    tina: {
+      mediaRoot: "uploads",
+      publicFolder: "public",
+    },
+  },
   schema: {
+    // ... leave your collections block as it is
     collections: [
       {
         name: "pages",
