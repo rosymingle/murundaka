@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+  repo: rosymingle/murundaka
   branch: main
 
 media_folder: "public/uploads"
@@ -12,14 +12,14 @@ collections:
     files:
       - label: "Home"
         name: "home"
-        file: "src/content/home.md"
+        file: "src/content/pages/home.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Content", name: "body", widget: "markdown" }
 
       - label: "About"
         name: "about"
-        file: "src/content/about.md"
+        file: "src/content/pages/about.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Content", name: "body", widget: "markdown" }
