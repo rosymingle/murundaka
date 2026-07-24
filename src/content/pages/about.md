@@ -1,9 +1,10 @@
 ---
 contactEmail: info@murundaka.org
-menuOrder: 2
 title: About Us
 heroTitle: About Murundaka
-heroTagline: 'Built on community, sharing, and environmental responsibility.'
+heroTagline: Built on community, sharing, and environmental responsibility.
+menuOrder: 2
 ---
-
 Murundaka consists of sustainable equity housing apartments and common spaces designed to foster a cooperative lifestyle.
+
+![](/uploads/76515357-6036-465f-9055-d11f80c04bd4.jpeg "Our common house was recently decorated for a residents' birthday party!")
