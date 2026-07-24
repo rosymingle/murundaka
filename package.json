@@ -13,8 +13,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/vercel": "^9.0.0",
-    "astro": "^6.3.6",
-    "astro-decap-cms-oauth": "^1.0.0"
+    "@astrojs/vercel": "^9.0.5",
+    "astro": "^5.0.0",
+    "astro-decap-cms-oauth": "latest"
   }
 }
