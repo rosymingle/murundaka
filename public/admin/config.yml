@@ -14,12 +14,20 @@ collections:
         name: "home"
         file: "src/content/pages/home.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Content", name: "body", widget: "markdown" }
+          - { label: "Menu Label", name: "title", widget: "string" }
+          - { label: "Hero Title", name: "heroTitle", widget: "string" }
+          - { label: "Hero Tagline", name: "heroTagline", widget: "string" }
+          - { label: "Menu Order", name: "menuOrder", widget: "number", required: false }
+          - { label: "Parent Menu", name: "parentMenu", widget: "string", required: false }
+          - { label: "Page Content", name: "body", widget: "markdown" }
 
       - label: "About"
         name: "about"
         file: "src/content/pages/about.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Content", name: "body", widget: "markdown" }
+          - { label: "Menu Label", name: "title", widget: "string" }
+          - { label: "Hero Title", name: "heroTitle", widget: "string" }
+          - { label: "Hero Tagline", name: "heroTagline", widget: "string" }
+          - { label: "Menu Order", name: "menuOrder", widget: "number", required: false }
+          - { label: "Parent Menu", name: "parentMenu", widget: "string", required: false }
+          - { label: "Page Content", name: "body", widget: "markdown" }
