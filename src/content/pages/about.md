@@ -7,7 +7,7 @@ parentMenu: null
 ---
 We are Murundaka Cohousing Community - a housing cooperative and an intentional community based in Heidelberg Heights in Melbourne, Australia. Our community was formed in 2011 and there are 20 households and approximately 35-40 people that are members of our community. We are proud members of the [Common Equity Housing](http://cehl.com.au/) program - an all-rental, social housing program that provides quality, long-term housing to Victorians. Murundaka's twenty households are members of Earth Co-op (Earth Common Equity Housing Cooperative). Earth Co-op is one of over a hundred housing co-operatives in the CEHL program and we are proud to uphold the principles of co-operatives.
 
-## Our Vision
+### Our Vision
 
 We are a cooperative community, relating to each other with respect, compassion and support.
 
@@ -23,7 +23,7 @@ These statements represent our vision of what we want to be together and who we 
 
 <iframe style="max-width:100%" width="560" height="315" src="https://www.youtube.com/embed/esxaCyml2PA?si=jzbQY-qDknAWXoWP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Earth Co-op
+### Earth Co-op
 
 Earth Co-op (Earth Common Equity Housing Co-operative Limited) began in 1986, acquiring our first home in 1989 and building up to eleven households around eight years after starting. We found that starting a CERC (Common Equity Rental Housing Co-operative) was not an easy or quick fix to get into secure housing!
 
@@ -46,7 +46,7 @@ The time had also come for us to address the ageing nature of our co-op membersh
 * 1989  First house at Cook St
 * 1990  42 Bamfield Rd purchased 
 
-## Murundaka
+### Murundaka
 
 Two of Earth Co-op’s founders, Giselle Wilkinson and Iain Walker, began nurturing the seed of an idea for a cohousing project in the 1990s. In 2005 they took the idea to Common Equity Housing Limited (CEHL), the housing association that administers the co-op housing program of which Earth Co-op is part.
 
@@ -66,7 +66,7 @@ Murundaka residents now enjoy regularly eating together, sharing our good fortun
 
 Murundaka residents hope theirs is the first of many similar cohousing communities in Victoria (and elsewhere) and are keen to offer their experience to support other such projects.
 
-## Energy Freedom Project
+### Energy Freedom Project
 
 In 2014 Earth CERC started our Energy Freedom project at Murundaka Cohousing Community. Our goals were to:
 
@@ -88,7 +88,7 @@ We pulled together money to buy our new equipment with a Solar Festival Fundrais
 
 In the future we will remove all our gas cooking and hot-water boilers and replace those with electric so we can be fossil fuel free. We’re also exploring share-owned electric vehicles and battery power storage. We’re keen to share what we’ve learnt with other co-ops so stay tuned for upcoming events and info.
 
-## FAQs
+### FAQs
 
 * Who owns Murundaka?
 
@@ -154,7 +154,7 @@ Conflict, differences of opinion, arguments. All are common living with people a
 
 On average, between 5-10 hours per week. This includes monthly community meetings, checking and responding to community emails regularly, attending working bees, helping cook common meals, being a part of a committee, promoting our co-op and community, etc.
 
-## Join our Community
+### Join our Community
 
 We’re excited that you’re considering membership in our vibrant and supportive cohousing community. Joining us involves several important steps, but please keep in mind that completing them does not guarantee membership. Here’s how to begin the process:
 
