@@ -1,8 +1,7 @@
 ---
-contactEmail: info@murundaka.org
-title: About Us
-heroTitle: About Murundaka
-heroTagline: Built on community, sharing, and environmental responsibility.
+title: About
+heroTitle: Welcome to Murundaka Cohousing
+heroTagline: Sustainable, cooperative living in Heidelberg Heights.
 menuOrder: 2
 ---
 Murundaka consists of sustainable equity housing apartments and common spaces designed to foster a cooperative lifestyle.
