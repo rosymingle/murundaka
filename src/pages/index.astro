@@ -125,31 +125,29 @@ const Content = homepageFile.Content;
 		<div class="eacss">
 			<div class="helvetica smooth t-align-c">
 				<header class="">
-					<div class="brdr-b-1 brdr-grey-d">
-						<div class="tbbg bg-size-cover h-300"></div>
-						<div class="wrapper-1000 flex flex-jc-spbt m-unflex pad-10 mrgn-t-n60">
-							<div><a href="/" title={`${header.siteName}`}><img class="wrapper-220 mrgn-b-n35" src="/uploads/md-logo-treee.png"></a></div>
-							<div class="">
-								<nav class="">
-									<ul class="nav-bar">
-										{navMenu.map((item) => (
-											<li class="menu-item">
-												<a href={item.url}>{item.label}</a>
-												
-												{item.children.length > 0 && (
-													<ul class="dropdown">
-														{item.children.map((child: any) => (
-															<li>
-																<a href={child.url}>{child.label}</a>
-															</li>
-														))}
-													</ul>
-												)}
-											</li>
-										))}
-									</ul>
-								</nav>
-							</div>
+					<div class="tbbg bg-size-cover h-300 brdr-b-1 brdr-grey-d"></div>
+					<div class="wrapper-1000 flex flex-items-end flex-jc-spbt m-unflex pad-10 mrgn-t-n100">
+						<div><a href="/" title={`${header.siteName}`}><img class="wrapper-220 mrgn-b-n35" src="/uploads/md-logo-treee.png"></a></div>
+						<div class="">
+							<nav class="">
+								<ul class="nav-bar">
+									{navMenu.map((item) => (
+										<li class="menu-item">
+											<a href={item.url}>{item.label}</a>
+											
+											{item.children.length > 0 && (
+												<ul class="dropdown">
+													{item.children.map((child: any) => (
+														<li>
+															<a href={child.url}>{child.label}</a>
+														</li>
+													))}
+												</ul>
+											)}
+										</li>
+									))}
+								</ul>
+							</nav>
 						</div>
 					</div>
 				</header>
