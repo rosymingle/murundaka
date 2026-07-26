@@ -2,6 +2,7 @@
 title: Resources
 heroTitle: Resources
 menuOrder: 50
+parentMenu: About
 ---
 <div class="tiles-2up m-tiles-1up"><div class="tile">
 
