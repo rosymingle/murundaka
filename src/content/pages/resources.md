@@ -21,8 +21,6 @@ menuOrder: 50
 
 [Brougham St Cohousing](https://broughamstreetcohousing.com/our-land/)
 
-​</div><div class="tile">
-
 **Intentional Communities**
 
 [Collaborative Housing](https://www.collaborativehousing.org.au/)
@@ -35,13 +33,9 @@ menuOrder: 50
 
 [Commonground ](https://www.common-ground.org.au/)
 
-​​</div><div class="tile">
-
 **Housing Co-operatives**
 
 [Common Equity Housing Program](http://www.cehl.com.au/)
-
-​​</div><div class="tile">
 
 **Videos**
 
@@ -49,23 +43,19 @@ menuOrder: 50
 
 [Eco Villages Australia, Spotlight on Communities, Murundaka](https://www.youtube.com/watch?v=nL6z4wRXlLA)
 
-​</div><div class="tile">
+</div><div class="tile">
 
 **Research**
 
 [Beyond the White Picket Fence](https://www.thinkitforward.net/?utm_source=Foundation+for+Intentional+Community&utm_campaign=68ea447311-Community+Chat+-+08%2F06%2F2025&utm_medium=email&utm_term=0_7e39d41ce2-68ea447311-478881048&mc_cid=68ea447311&mc_eid=7ccc2fb830)
 
-Earth CERC
+**Earth CERC**
 
 [Earth CERC Rules](https://www.murundakacohousing.org.au/_files/ugd/cae542_1ffe67473892435db808cb7e8519f90e.pdf)
-
-</div><div class="tile">
 
 **Murundaka Cohousing Community**
 
 [Murundaka Cohousing Community Association Rules](https://www.murundakacohousing.org.au/_files/ugd/cae542_468908b602364974954578dabd0b1692.pdf)
-
-</div><div class="tile">
 
 **Murundaka in the Media**
 
@@ -83,15 +73,11 @@ Earth CERC
 
 [Shared Garden Sows the Seeds of Community Satisfaction - The Sydney Morning Herald](https://www.smh.com.au/lifestyle/shared-garden-sows-the-seeds-of-community-satisfaction-20190110-h19xjc.html)
 
-​</div><div class="tile">
-
 **Books**
 
 [Getting Our Act Together by Glen Ochre](https://www.groupwork.com.au/shop/p/getting-our-act-together-how-to-harness-the-power-of-groups-pdf-1)
 
 [Creating Cohousing by Durrett and McCamant](https://www.newsociety.com/Books/C/Creating-Cohousing)
-
-​</div><div class="tile">
 
 **Podcasts**
 
