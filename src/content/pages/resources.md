@@ -31,7 +31,9 @@ menuOrder: 50
 
 [Moora Moora](http://www.mooramoora.org.au/)
 
-[Commonground ](https://www.common-ground.org.au/)
+[Commonground](https://www.common-ground.org.au/)
+
+[Brougham Street Cohousing](https://broughamstreetcohousing.com/)
 
 **Housing Co-operatives**
 
