@@ -24,6 +24,7 @@ menuOrder: 50
 
 
 
+
 **Intentional Communities**
 
 [Collaborative Housing](https://www.collaborativehousing.org.au/)
@@ -41,9 +42,11 @@ menuOrder: 50
 
 
 
+
 **Housing Co-operatives**
 
 [Common Equity Housing Program](http://www.cehl.com.au/)
+
 
 
 
@@ -56,11 +59,14 @@ menuOrder: 50
 
 
 
+
+
 </div><div class="tile">
 
 **Research**
 
 [Beyond the White Picket Fence](https://www.thinkitforward.net/?utm_source=Foundation+for+Intentional+Community&utm_campaign=68ea447311-Community+Chat+-+08%2F06%2F2025&utm_medium=email&utm_term=0_7e39d41ce2-68ea447311-478881048&mc_cid=68ea447311&mc_eid=7ccc2fb830)
+
 
 
 
@@ -72,9 +78,11 @@ menuOrder: 50
 
 
 
+
 **Murundaka Cohousing Community**
 
 [Murundaka Cohousing Community Association Rules](https://www.murundakacohousing.org.au/_files/ugd/cae542_468908b602364974954578dabd0b1692.pdf)
+
 
 
 
@@ -98,6 +106,7 @@ menuOrder: 50
 
 
 
+
 **Books**
 
 [Getting Our Act Together by Glen Ochre](https://www.groupwork.com.au/shop/p/getting-our-act-together-how-to-harness-the-power-of-groups-pdf-1)
@@ -107,9 +116,11 @@ menuOrder: 50
 
 
 
+
 **Podcasts**
 
 [3CR Radio - Residents Talk About Living at Murundaka Housing Co-operative](https://www.3cr.org.au/localfoodconnections/episode/murundaka-housing-co-operative)
+
 
 
 
