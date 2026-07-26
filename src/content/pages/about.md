@@ -15,10 +15,15 @@ We are a cooperative community, relating to each other with respect, compassion 
 We acknowledge the traditional owners on whose land we are living and working, and pay our respects to their Elders past and present.
 
 * We live sustainably: Conscious of ourselves, our local community, the world and our legacy for the future through our individual and collective actions.
+
 * We live with integrity: Balancing rights and responsibilities and behaving with authenticity.
+
 * We are self-reflective and outward looking: Curious, courageous, collaborative, valuing the cohesion of the group and the wisdom of all.
+
 * We are part of our broader communities: Learning from and engaging in dialogue and action.
+
 * We have fun: Encouraging trust and harmony through play, spontaneity and creativity.
+
 
 These statements represent our vision of what we want to be together and who we are already. We’ll aim high and forgive each other when we fall short.
 
