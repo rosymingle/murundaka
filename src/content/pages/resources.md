@@ -3,7 +3,7 @@ title: Resources
 heroTitle: Resources
 menuOrder: 50
 ---
-<div class="tiles-2up m-tile-1up">
+<div class="tiles-2up m-tiles-1up">
 <div class="tile">
 
 **Cohousing**
