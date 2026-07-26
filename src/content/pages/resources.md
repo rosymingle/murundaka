@@ -23,6 +23,7 @@ menuOrder: 50
 
 
 
+
 **Intentional Communities**
 
 [Collaborative Housing](https://www.collaborativehousing.org.au/)
@@ -39,9 +40,11 @@ menuOrder: 50
 
 
 
+
 **Housing Co-operatives**
 
 [Common Equity Housing Program](http://www.cehl.com.au/)
+
 
 
 
@@ -61,15 +64,18 @@ menuOrder: 50
 
 
 
+
 **Earth CERC**
 
 [Earth CERC Rules](https://www.murundakacohousing.org.au/_files/ugd/cae542_1ffe67473892435db808cb7e8519f90e.pdf)
 
 
 
+
 **Murundaka Cohousing Community**
 
 [Murundaka Cohousing Community Association Rules](https://www.murundakacohousing.org.au/_files/ugd/cae542_468908b602364974954578dabd0b1692.pdf)
+
 
 
 
@@ -91,6 +97,7 @@ menuOrder: 50
 
 
 
+
 **Books**
 
 [Getting Our Act Together by Glen Ochre](https://www.groupwork.com.au/shop/p/getting-our-act-together-how-to-harness-the-power-of-groups-pdf-1)
@@ -99,9 +106,11 @@ menuOrder: 50
 
 
 
+
 **Podcasts**
 
 [3CR Radio - Residents Talk About Living at Murundaka Housing Co-operative](https://www.3cr.org.au/localfoodconnections/episode/murundaka-housing-co-operative)
+
 
 
 
