@@ -79,7 +79,7 @@ const Content = homepageFile.Content;
 			.tbbg { background-image: url('/uploads/hero2.avif'); }
 			/* Pure CSS Dropdown Navigation */
 			.nav-bar {
-				padding: 0 20px;
+				padding: 5px 0;
 				display: flex;
 				justify-content: center;
 				list-style: none;
@@ -134,7 +134,7 @@ const Content = homepageFile.Content;
 				<header class="pos-r">
 					<div class="tbbg bg-pos-c bg-size-cover h-300 brdr-b-1 brdr-grey-d">
 						<nav class="wrapper-1050 pos-s pad-10">
-							<ul class="nav-bar bg-white brad-7 float-r m-float-n">
+							<ul class="nav-bar bg-white brad-7 float-r">
 								{navMenu.map((item) => (
 									<li class="menu-item">
 										<a href={item.url}>{item.label}</a>
@@ -153,7 +153,7 @@ const Content = homepageFile.Content;
 							</ul>
 						</nav>
 					</div>
-					<div class="wrapper-1050 mrgn-t-n120 m-mrgn-t-n100 cf">
+					<div class="wrapper-1050 mrgn-t-n120 cf">
 						<a href="/" class="disp-bl float-l" title={`${header.siteName}`}><img class="wrapper-300 mrgn-b-n50 m-wrapper-220" src="/uploads/md-logo-treee.png"></a>
 					</div>
 				</header>
