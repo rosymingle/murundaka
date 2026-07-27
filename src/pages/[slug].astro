@@ -75,7 +75,7 @@ const Content = fileData.Content;
 			.tbbg { background-image: url('/uploads/hero1.avif'); }
 			/* Pure CSS Dropdown Navigation */
 			.nav-bar {
-				padding: 5px 0;
+				padding: 0;
 				display: flex;
 				justify-content: center;
 				list-style: none;
@@ -84,14 +84,20 @@ const Content = fileData.Content;
 			}
 			.menu-item {
 				position: relative;
-				padding: 0 5px;
+				padding: 0;
 			}
 			.menu-item a {
 				text-decoration: none;
 				color: #2e4a3f;
 				font-weight: 600;
-				padding: 9px 17px;
+				padding: 12px 21px;
 				display: block;
+			}
+			.menu-item:first-child > a {
+				border-radius: 7px 0 0 7px;
+			}
+			.menu-item:last-child > a {
+				border-radius: 0 7px 7px 0;
 			}
 			.menu-item a:hover, .menu-item:hover > a {
 				background: #e9f0ec;
@@ -101,7 +107,7 @@ const Content = fileData.Content;
 			.dropdown {
 				position: absolute;
 				top: 100%;
-				left: 5px;
+				left: 0;
 				background: white;
 				border: 1px solid #e9f0ec;
 				list-style: none;
@@ -115,7 +121,7 @@ const Content = fileData.Content;
 				text-align: left;
 			}
 			.dropdown a {
-				padding: 9px 17px;
+				padding: 12px 21px;
 				font-weight: 400;
 			}
 			
