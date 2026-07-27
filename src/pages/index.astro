@@ -87,16 +87,16 @@ const Content = homepageFile.Content;
 			}
 			.menu-item {
 				position: relative;
-				padding: 15px 10px;
+				padding: 0 5px;
 			}
 			.menu-item a {
 				text-decoration: none;
 				color: #2e4a3f;
 				font-weight: 600;
-				padding: 6px 12px;
-				border-radius: 4px;
+				padding: 9px 17px;
+				display: block;
 			}
-			.menu-item a:hover {
+			.menu-item a:hover, .menu-item:hover > a {
 				background: #e9f0ec;
 			}
 
@@ -104,23 +104,22 @@ const Content = homepageFile.Content;
 			.dropdown {
 				position: absolute;
 				top: 100%;
-				left: 0;
+				left: 5px;
 				background: white;
-				box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-				border-radius: 0 0 7px 7px;
+				border: 1px solid #e9f0ec;
 				list-style: none;
 				padding: 0;
-				min-width: 180px;
+				width: 155px;
 				display: none; /* Hide by default */
 				z-index: 10;
 			}
 			.dropdown li {
-				padding: 3px 10px;
+				padding: 0px;
 				text-align: left;
 			}
 			.dropdown a {
+				padding: 9px 17px;
 				font-weight: 400;
-				display: block;
 			}
 			
 			/* Trigger dropdown on hover */
