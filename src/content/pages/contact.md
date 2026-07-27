@@ -10,4 +10,4 @@ Email enquiries: [admin@murundakacohousing.org.au](mailto:admin@murundakacohousi
 
 Heidelberg Heights, Melbourne, Australia
 
-*Please note: as inviting as it looks, Murundaka is a private home. Don't turn up uninvited!* 🙏
+*Note: as inviting as it seems, Murundaka is a private home. Please don't turn up uninvited!* 🙏
