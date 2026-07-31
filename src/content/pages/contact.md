@@ -11,16 +11,26 @@ We love meeting new people and occasionally throughout the year we open our home
   action="https://formspree.io/f/mzdnqvqo"
   method="POST"
 >
+
   <label>
+
     Your email:
-    <input type="email" name="email">
+
+    <input type="email" name="email" style="width: 100%">
+
   </label>
+
   <label>
+
     Your message:
-    <textarea name="message"></textarea>
+
+    <textarea name="message" style="width: 100% height: 200px"></textarea>
+
   </label>
   <!-- your other form fields go here -->
+
   <button type="submit">Send</button>
+
 </form>
 
 Email enquiries: [info@murundakacohousing.org.au](mailto:info@murundakacohousing.org.au)
