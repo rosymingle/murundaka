@@ -5,10 +5,10 @@ heroTagline: Get in touch with us
 menuOrder: 99
 ---
 We love meeting new people and occasionally throughout the year we open our home to the public for events. To stay updated on upcoming events, please subscribe to our [mailing list](https://forms.gle/LPvAdXxKomAPDBe77) or follow us on [Facebook](https://www.facebook.com/Murundaka).
-<br><br>
+<br><br><br>
 <div class="t-align-c">
 
-### Online Enquiry
+### Enquire
 
 <!-- modify this form HTML and place wherever you want your form -->
 
@@ -16,16 +16,9 @@ We love meeting new people and occasionally throughout the year we open our home
   action="https://formspree.io/f/mzdnqvqo"
   method="POST"
 >
-
-  <label>
-    Your email:<br>
-    <input type="email" name="email" style="width: 300px; padding: 5px;">
-  </label>
+    <input class="wid-100 pad-10 brdr-1 brad-5" type="email" name="_replyto" id="email" required="" placeholder="Your email">
 <br><br>
-  <label>
-    Your message:<br>
-    <textarea name="message" style="width: 300px; height: 200px; padding: 5px;"></textarea>
-  </label>
+    <textarea class="wid-200 h-200 brdr-1 brad-5 pad-10 circular" name="message" id="message" required="" placeholder="Your message"></textarea>
   <!-- your other form fields go here -->
 <br><br>
   <button type="submit" class="cta-solid">Send</button>
