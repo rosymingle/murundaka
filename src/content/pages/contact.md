@@ -15,14 +15,12 @@ We love meeting new people and occasionally throughout the year we open our home
   action="https://formspree.io/f/mzdnqvqo"
   method="POST"
 >
-
-    <input class="wid-100p pad-10 brdr-1 brad-5" type="email" name="_replyto" id="email" required="" placeholder="Your email">
+<input class="wid-100p pad-10 brdr-1 brad-5" type="email" name="_replyto" id="email" required="" placeholder="Your email">
 <br><br>
     <textarea class="wid-100p h-200 brdr-1 brad-5 pad-10 circular" name="message" id="message" required="" placeholder="Your message"></textarea>
   <!-- your other form fields go here -->
 <br><br>
   <button type="submit" class="cta-solid">Send</button>
-
 </form><br><br>
 
 </div>
