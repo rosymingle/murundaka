@@ -22,9 +22,7 @@ parentMenu: About
 
 [Brougham St Cohousing](https://broughamstreetcohousing.com/our-land/)
 
-
-
-
+<br><br>
 
 **Intentional Communities**
 
@@ -40,17 +38,13 @@ parentMenu: About
 
 [Brougham Street Cohousing](https://broughamstreetcohousing.com/)
 
-
-
-
+<br><br>
 
 **Housing Co-operatives**
 
 [Common Equity Housing Program](http://www.cehl.com.au/)
 
-
-
-
+<br><br>
 
 **Videos**
 
@@ -58,9 +52,7 @@ parentMenu: About
 
 [Eco Villages Australia, Spotlight on Communities, Murundaka](https://www.youtube.com/watch?v=nL6z4wRXlLA)
 
-
-
-
+<br><br>
 
 </div><div class="tile">
 
@@ -68,25 +60,19 @@ parentMenu: About
 
 [Beyond the White Picket Fence](https://www.thinkitforward.net/?utm_source=Foundation+for+Intentional+Community&utm_campaign=68ea447311-Community+Chat+-+08%2F06%2F2025&utm_medium=email&utm_term=0_7e39d41ce2-68ea447311-478881048&mc_cid=68ea447311&mc_eid=7ccc2fb830)
 
-
-
-
+<br><br>
 
 **Earth CERC**
 
 [Earth CERC Rules](https://www.murundakacohousing.org.au/_files/ugd/cae542_1ffe67473892435db808cb7e8519f90e.pdf)
 
-
-
-
+<br><br>
 
 **Murundaka Cohousing Community**
 
 [Murundaka Cohousing Community Association Rules](https://www.murundakacohousing.org.au/_files/ugd/cae542_468908b602364974954578dabd0b1692.pdf)
 
-
-
-
+<br><br>
 
 **Murundaka in the Media**
 
@@ -104,9 +90,7 @@ parentMenu: About
 
 [Shared Garden Sows the Seeds of Community Satisfaction - The Sydney Morning Herald](https://www.smh.com.au/lifestyle/shared-garden-sows-the-seeds-of-community-satisfaction-20190110-h19xjc.html)
 
-
-
-
+<br><br>
 
 **Books**
 
@@ -114,16 +98,10 @@ parentMenu: About
 
 [Creating Cohousing by Durrett and McCamant](https://www.newsociety.com/Books/C/Creating-Cohousing)
 
-
-
-
+<br><br>
 
 **Podcasts**
 
 [3CR Radio - Residents Talk About Living at Murundaka Housing Co-operative](https://www.3cr.org.au/localfoodconnections/episode/murundaka-housing-co-operative)
-
-
-
-
 
 </div></div>
