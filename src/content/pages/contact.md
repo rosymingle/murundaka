@@ -20,7 +20,7 @@ We love meeting new people and occasionally throughout the year we open our home
     <textarea class="wid-100 h-200 brdr-1 brad-5 pad-10 circular" name="message" id="message" required="" placeholder="Your message"></textarea>
   <!-- your other form fields go here -->
 <br><br>
-  <button type="submit" class="cta-solid">Send</button>
+  <button type="submit" class="cta-solid brdr-0">Send</button>
 </form><br><br>
 </div>
 
