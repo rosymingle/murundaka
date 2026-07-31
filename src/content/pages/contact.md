@@ -6,10 +6,10 @@ menuOrder: 99
 ---
 We love meeting new people and occasionally throughout the year we open our home to the public for events. To stay updated on upcoming events, please subscribe to our [mailing list](https://forms.gle/LPvAdXxKomAPDBe77) or follow us on [Facebook](https://www.facebook.com/Murundaka).
 
-<br><br><br>
+<br><br>
 <div class="wrapper-300">
 
-### Send us a Message
+### Message Us
 
 <form
   action="https://formspree.io/f/mzdnqvqo"
