@@ -13,19 +13,13 @@ We love meeting new people and occasionally throughout the year we open our home
 >
 
   <label>
-
     Your email:
-
     <input type="email" name="email" style="width: 100%">
-
   </label>
 
   <label>
-
     Your message:
-
     <textarea name="message" style="width: 100% height: 200px"></textarea>
-
   </label>
   <!-- your other form fields go here -->
 
