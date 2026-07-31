@@ -24,8 +24,8 @@ We love meeting new people and occasionally throughout the year we open our home
 </form><br><br>
 </div>
 
-Email enquiries: [info@murundakacohousing.org.au](mailto:info@murundakacohousing.org.au)
+Or email: [info@murundakacohousing.org.au](mailto:info@murundakacohousing.org.au)
 
-Heidelberg Heights, Melbourne, Australia
+We are based in Heidelberg Heights, Melbourne, Australia
 
 *Note: as inviting as it seems, Murundaka is a private home. Please don't turn up uninvited!* 🙏
