@@ -6,7 +6,26 @@ menuOrder: 99
 ---
 We love meeting new people and occasionally throughout the year we open our home to the public for events. To stay updated on upcoming events, please subscribe to our [mailing list](https://forms.gle/LPvAdXxKomAPDBe77) or follow us on [Facebook](https://www.facebook.com/Murundaka).
 
-Email enquiries: [admin@murundakacohousing.org.au](mailto:admin@murundakacohousing.org.au)
+```
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/mzdnqvqo"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+```
+
+Email enquiries: [info@murundakacohousing.org.au](mailto:info@murundakacohousing.org.au)
 
 Heidelberg Heights, Melbourne, Australia
 
