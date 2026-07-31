@@ -6,7 +6,10 @@ menuOrder: 99
 ---
 We love meeting new people and occasionally throughout the year we open our home to the public for events. To stay updated on upcoming events, please subscribe to our [mailing list](https://forms.gle/LPvAdXxKomAPDBe77) or follow us on [Facebook](https://www.facebook.com/Murundaka).
 
-<!-- modify this form HTML and place wherever you want your form -->
+### Contact Us
+
+<!-- modify this form HTML and place wherever you want your form --><br><br>
+
 <form
   action="https://formspree.io/f/mzdnqvqo"
   method="POST"
@@ -25,7 +28,7 @@ We love meeting new people and occasionally throughout the year we open our home
 <br><br>
   <button type="submit" class="cta-solid">Send</button>
 
-</form>
+</form><br><br>
 
 Email enquiries: [info@murundakacohousing.org.au](mailto:info@murundakacohousing.org.au)
 
