@@ -5,11 +5,11 @@ menuOrder: 80
 parentMenu: About
 ---
 We’re excited that you’re considering membership in our vibrant and supportive cohousing community. Joining us involves several important steps, but please keep in mind that completing them does not guarantee membership. Here’s how to begin the process:
-<br>
+<br><br>
 
 1. **INFO**\
    Interested in applying to live at Murundaka? First thing to do is to find out as much as you can about Murundaka, Cohousing and the Common Equity Housing Limited (CEHL).\
-   <br><br>
+   <br>
 2. **ELIGIBILITY**\
    Check and make sure you meet the eligibility requirements of the CEHL program. CEHL is a co-operative, social- housing program so members must not exceed income and asset limits.
    <br><br>
