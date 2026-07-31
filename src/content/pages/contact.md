@@ -13,16 +13,16 @@ We love meeting new people and occasionally throughout the year we open our home
 >
 
   <label>
-    Your email:
+    Your email:<br>
     <input type="email" name="email" style="width: 300px">
   </label>
-
+<br><br>
   <label>
-    Your message:
+    Your message:<br>
     <textarea name="message" style="width: 300px; height: 200px"></textarea>
   </label>
   <!-- your other form fields go here -->
-
+<br><br>
   <button type="submit" class="cta-solid">Send</button>
 
 </form>
