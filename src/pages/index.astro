@@ -90,6 +90,14 @@ const Content = homepageFile.Content;
 				position: relative;
 				padding: 0;
 			}
+			.menu-item.isParent > a {
+				pointer-events: none;
+			}
+			.menu-item.isParent > a:hover,
+			.menu-item.isParent > a:active,
+			.menu-item.isParent > a:focus {
+				pointer-events: auto;
+			}
 			.menu-item a {
 				text-decoration: none;
 				color: #2e4a3f;
@@ -142,7 +150,10 @@ const Content = homepageFile.Content;
 						<nav class="wrapper-1050 pos-s pad-10 z-1">
 							<ul class="nav-bar bg-white brad-7 float-r">
 								{navMenu.map((item) => (
-									<li class="menu-item">
+									<li class:list={[
+									  'menu-item',
+									  { isParent: item.children.length > 0 }
+									]}>
 										<a href={item.url}>{item.label}</a>
 										
 										{item.children.length > 0 && (
