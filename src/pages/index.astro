@@ -90,9 +90,6 @@ const Content = homepageFile.Content;
 				position: relative;
 				padding: 0;
 			}
-			.menu-item.isParent > a {
-				pointer-events: none;
-			}
 			.menu-item a {
 				text-decoration: none;
 				color: #2e4a3f;
@@ -133,7 +130,9 @@ const Content = homepageFile.Content;
 			}
 			
 			/* Trigger dropdown on hover */
-			.menu-item:hover .dropdown {
+			.menu-item:hover .dropdown,
+			.menu-item:focus-within .dropdown
+			{
 				display: block;
 			}
 		</style>
