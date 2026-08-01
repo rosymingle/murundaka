@@ -93,9 +93,6 @@ const Content = homepageFile.Content;
 			.menu-item.isParent > a {
 				pointer-events: none;
 			}
-			.menu-item.isParent:focus > a {
-				pointer-events: auto;
-			}
 			.menu-item a {
 				text-decoration: none;
 				color: #2e4a3f;
@@ -111,6 +108,7 @@ const Content = homepageFile.Content;
 			}
 			.menu-item a:hover, .menu-item:hover > a {
 				background: #e9f0ec;
+				pointer-events: auto;
 			}
 
 			/* Dropdown Panel */
