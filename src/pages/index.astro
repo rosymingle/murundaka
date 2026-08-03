@@ -191,7 +191,7 @@ const Content = homepageFile.Content;
 			</div>
 		</div>
 		<script type="text/javascript">
-			document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     const images = [
         '/uploads/hero2.avif',
         '/uploads/230.jpg',
@@ -202,41 +202,69 @@ const Content = homepageFile.Content;
         '/uploads/385.jpg',
         '/uploads/5652.jpg'
     ];
-    let nextimage = 0;
-    const elements = document.querySelectorAll('.tbbg');
 
-    // Preload images
+    // 1. Preload all images immediately so transitions never lag
     images.forEach(url => {
         const img = new Image();
         img.src = url;
     });
 
-    // Set standard smooth fade transition
-    elements.forEach(el => {
-        el.style.transition = 'opacity 0.5s ease-in-out';
-    });
+    const targets = document.querySelectorAll('.tbbg');
 
-    doSlideshow();
-
-    function doSlideshow() {
-        if (nextimage >= images.length) {
-            nextimage = 0;
+    targets.forEach(target => {
+        // Ensure container can position absolute children correctly
+        if (getComputedStyle(target).position === 'static') {
+            target.style.position = 'relative';
         }
 
-        elements.forEach(el => {
-            // Step 1: Hide immediately (mimics jQuery start state)
-            el.style.opacity = '0';
+        // 2. Dynamically create two overlay layers inside your container
+        const layer1 = document.createElement('div');
+        const layer2 = document.createElement('div');
 
-            // Step 2: Swap the background image while hidden, then fade back in
-            setTimeout(() => {
-                el.style.backgroundImage = 'url("' + images[nextimage] + '")';
-                el.style.opacity = '1';
-            }, 50); // Small 50ms buffer ensures the browser processes the image swap before fading in
-        });
+        const layerStyle = `
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: opacity 1s ease-in-out;
+            pointer-events: none;
+        `;
 
-        nextimage++;
-        setTimeout(doSlideshow, 4500); // 4000ms display + 500ms fade duration
-    }
+        layer1.style.cssText = layerStyle;
+        layer2.style.cssText = layerStyle;
+
+        // Start layer 1 visible with the first image, layer 2 hidden
+        layer1.style.backgroundImage = `url("${images[0]}")`;
+        layer1.style.opacity = '1';
+        layer2.style.opacity = '0';
+
+        target.appendChild(layer1);
+        target.appendChild(layer2);
+
+        // 3. Run the crossfade loop
+        let nextIndex = 1;
+        let activeLayer = layer1;
+        let hiddenLayer = layer2;
+
+        setInterval(() => {
+            // Load the upcoming image into the hidden layer sitting underneath/above
+            hiddenLayer.style.backgroundImage = `url("${images[nextIndex]}")`;
+            
+            // Crossfade opacities simultaneously
+            hiddenLayer.style.opacity = '1';
+            activeLayer.style.opacity = '0';
+
+            // Swap references for the next cycle
+            const temp = activeLayer;
+            activeLayer = hiddenLayer;
+            hiddenLayer = temp;
+
+            nextIndex = (nextIndex + 1) % images.length;
+        }, 4000); // Swaps image every 4 seconds (1s of crossfade + 3s hold)
+    });
 });
 		</script>
 	</body>
