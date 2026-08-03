@@ -76,7 +76,6 @@ const Content = homepageFile.Content;
 			  	font-weight: 600 !important;
 			  	font-style: normal;
 			}
-			.tbbg { background-image: url('/uploads/hero2.avif'); }
 			/* Pure CSS Dropdown Navigation */
 			.nav-bar {
 				padding: 0;
@@ -141,7 +140,29 @@ const Content = homepageFile.Content;
 		<div>
 			<div class="helvetica smooth t-align-c">
 				<header class="pos-r">
-					<div class="tbbg bg-pos-c bg-size-cover h-300 brdr-b-1 brdr-grey-d">
+					<!--  BG img cycle -->
+					<div style="display: none;">
+						<script type="text/javascript">
+							$(document).ready(function () {
+								var images=new Array(
+									'/uploads/230.jpg',
+									'/uploads/235.jpg');
+									'/uploads/334.jpg');
+									'/uploads/339.jpg');
+									'/uploads/378.jpg');
+									'/uploads/385.jpg');
+									'/uploads/5652.jpg');
+								var nextimage=0; doSlideshow();
+								function doSlideshow(){
+									if(nextimage>=images.length){nextimage=0;}
+									$('.tbbg').css('background-image','url("'+images[nextimage++]+'")').fadeIn(500,function(){
+										setTimeout(doSlideshow,4000);
+									});
+								}
+							});
+						</script>
+					</div>					
+					<div class="tbbg bg-pos-c bg-size-cover h-300 brdr-b-1 brdr-grey-d" style="background-image: url('/uploads/hero2.avif');">
 						<nav class="wrapper-1050 pos-s pad-10 z-1">
 							<ul class="nav-bar bg-white brad-7 float-r">
 								{navMenu.map((item) => (
