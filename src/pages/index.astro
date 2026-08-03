@@ -202,24 +202,21 @@ const Content = homepageFile.Content;
 			        '/uploads/385.jpg',
 			        '/uploads/5652.jpg'
 			    ];
+			
+			    // Preload images into cache
+			    images.forEach(url => {
+			        const img = new Image();
+			        img.src = url;
+			    });
+			
 			    let nextimage = 0;
 			    const elements = document.querySelectorAll('.tbbg');
 			
-			    // 1. Preload images so the browser caches them immediately
-			    function preloadImages(urls) {
-			        urls.forEach(url => {
-			            const img = new Image();
-			            img.src = url;
-			        });
-			    }
-			    preloadImages(images);
-			
-			    // 2. Set up smooth CSS transitions
+			    // Add smooth CSS transition for opacity
 			    elements.forEach(el => {
 			        el.style.transition = 'opacity 0.5s ease-in-out';
 			    });
 			
-			    // 3. Kick off the slideshow
 			    doSlideshow();
 			
 			    function doSlideshow() {
@@ -228,16 +225,21 @@ const Content = homepageFile.Content;
 			        }
 			
 			        elements.forEach(el => {
-			            el.style.opacity = '0';
+			            // Step 1: Immediately change the background image (behind the scenes)
+			            el.style.backgroundImage = 'url("' + images[nextimage] + '")';
+			            
+			            // Step 2: Fade in (matches jQuery's .fadeIn(500))
+			            el.style.opacity = '1';
 			
+			            // Step 3: Wait for display time, then fade out before changing to next image
 			            setTimeout(() => {
-			                el.style.backgroundImage = 'url("' + images[nextimage] + '")';
-			                el.style.opacity = '1';
-			            }, 500);
+			                el.style.opacity = '0';
+			            }, 3500); // Fades out 500ms before the next cycle starts
 			        });
 			
 			        nextimage++;
-			        setTimeout(doSlideshow, 4500);
+			        // Repeat cycle every 4000ms
+			        setTimeout(doSlideshow, 4000);
 			    }
 			});
 		</script>
