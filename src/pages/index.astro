@@ -143,23 +143,46 @@ const Content = homepageFile.Content;
 					<!--  BG img cycle -->
 					<div style="display: none;">
 						<script type="text/javascript">
-							$(document).ready(function () {
-								var images=new Array(
-									'/uploads/hero2.avif',
-									'/uploads/230.jpg',
-									'/uploads/235.jpg',
-									'/uploads/334.jpg',
-									'/uploads/339.jpg',
-									'/uploads/378.jpg',
-									'/uploads/385.jpg',
-									'/uploads/5652.jpg');
-								var nextimage=0; doSlideshow();
-								function doSlideshow(){
-									if(nextimage>=images.length){nextimage=0;}
-									$('.tbbg').css('background-image','url("'+images[nextimage++]+'")').fadeIn(500,function(){
-										setTimeout(doSlideshow,4000);
-									});
-								}
+							document.addEventListener('DOMContentLoaded', function () {
+							    const images = [
+							        '/uploads/hero2.avif',
+							        '/uploads/230.jpg',
+							        '/uploads/235.jpg',
+							        '/uploads/334.jpg',
+							        '/uploads/339.jpg',
+							        '/uploads/378.jpg',
+							        '/uploads/385.jpg',
+							        '/uploads/5652.jpg'
+							    ];
+							    let nextimage = 0;
+							    const elements = document.querySelectorAll('.tbbg');
+							
+							    // Add CSS transition for smooth fading
+							    elements.forEach(el => {
+							        el.style.transition = 'opacity 0.5s ease-in-out';
+							    });
+							
+							    doSlideshow();
+							
+							    function doSlideshow() {
+							        if (nextimage >= images.length) {
+							            nextimage = 0;
+							        }
+							
+							        elements.forEach(el => {
+							            // Fade out
+							            el.style.opacity = '0';
+							
+							            setTimeout(() => {
+							                // Change background image and fade in
+							                el.style.backgroundImage = 'url("' + images[nextimage] + '")';
+							                el.style.opacity = '1';
+							            }, 500); // Matches the fade duration
+							        });
+							
+							        nextimage++;
+							        setTimeout(doSlideshow, 4500); // 4000ms delay + 500ms transition time
+							    }
 							});
 						</script>
 					</div>					
