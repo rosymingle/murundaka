@@ -139,53 +139,7 @@ const Content = homepageFile.Content;
 	<body class="eacss">
 		<div>
 			<div class="helvetica smooth t-align-c">
-				<header class="pos-r">
-					<!--  BG img cycle -->
-					<div style="display: none;">
-						<script type="text/javascript">
-							document.addEventListener('DOMContentLoaded', function () {
-							    const images = [
-							        '/uploads/hero2.avif',
-							        '/uploads/230.jpg',
-							        '/uploads/235.jpg',
-							        '/uploads/334.jpg',
-							        '/uploads/339.jpg',
-							        '/uploads/378.jpg',
-							        '/uploads/385.jpg',
-							        '/uploads/5652.jpg'
-							    ];
-							    let nextimage = 0;
-							    const elements = document.querySelectorAll('.tbbg');
-							
-							    // Add CSS transition for smooth fading
-							    elements.forEach(el => {
-							        el.style.transition = 'opacity 0.5s ease-in-out';
-							    });
-							
-							    doSlideshow();
-							
-							    function doSlideshow() {
-							        if (nextimage >= images.length) {
-							            nextimage = 0;
-							        }
-							
-							        elements.forEach(el => {
-							            // Fade out
-							            el.style.opacity = '0';
-							
-							            setTimeout(() => {
-							                // Change background image and fade in
-							                el.style.backgroundImage = 'url("' + images[nextimage] + '")';
-							                el.style.opacity = '1';
-							            }, 500); // Matches the fade duration
-							        });
-							
-							        nextimage++;
-							        setTimeout(doSlideshow, 4500); // 4000ms delay + 500ms transition time
-							    }
-							});
-						</script>
-					</div>					
+				<header class="pos-r">	
 					<div class="tbbg bg-pos-c bg-size-cover h-400 brdr-b-1 brdr-grey-d" style="background-image: url('/uploads/hero2.avif');">
 						<nav class="wrapper-1050 pos-s pad-10 z-1">
 							<ul class="nav-bar bg-white brad-7 float-r">
@@ -236,5 +190,56 @@ const Content = homepageFile.Content;
 				</footer>
 			</div>
 		</div>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function () {
+			    const images = [
+			        '/uploads/hero2.avif',
+			        '/uploads/230.jpg',
+			        '/uploads/235.jpg',
+			        '/uploads/334.jpg',
+			        '/uploads/339.jpg',
+			        '/uploads/378.jpg',
+			        '/uploads/385.jpg',
+			        '/uploads/5652.jpg'
+			    ];
+			    let nextimage = 0;
+			    const elements = document.querySelectorAll('.tbbg');
+			
+			    // 1. Preload images so the browser caches them immediately
+			    function preloadImages(urls) {
+			        urls.forEach(url => {
+			            const img = new Image();
+			            img.src = url;
+			        });
+			    }
+			    preloadImages(images);
+			
+			    // 2. Set up smooth CSS transitions
+			    elements.forEach(el => {
+			        el.style.transition = 'opacity 0.5s ease-in-out';
+			    });
+			
+			    // 3. Kick off the slideshow
+			    doSlideshow();
+			
+			    function doSlideshow() {
+			        if (nextimage >= images.length) {
+			            nextimage = 0;
+			        }
+			
+			        elements.forEach(el => {
+			            el.style.opacity = '0';
+			
+			            setTimeout(() => {
+			                el.style.backgroundImage = 'url("' + images[nextimage] + '")';
+			                el.style.opacity = '1';
+			            }, 500);
+			        });
+			
+			        nextimage++;
+			        setTimeout(doSlideshow, 4500);
+			    }
+			});
+		</script>
 	</body>
 </html>
