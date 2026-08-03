@@ -134,7 +134,7 @@ const Content = fileData.Content;
 		<div>
 			<div class="helvetica smooth t-align-c">
 				<header class="pos-r">
-					<div class="tbbg bg-pos-c bg-size-cover h-300 brdr-b-1 brdr-grey-d pos-r">
+					<div class="tbbg bg-pos-c bg-size-cover h-400 brdr-b-1 brdr-grey-d pos-r" background-image: url('/uploads/hero2.avif')">
 						<nav class="wrapper-1050 pos-s pad-10 z-1">
 							<ul class="nav-bar bg-white brad-7 float-r">
 								{navMenu.map((item) => (
@@ -181,5 +181,82 @@ const Content = fileData.Content;
 				</footer>
 			</div>
 		</div>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function () {
+			    const images = [
+			        '/uploads/hero2.avif',
+			        '/uploads/230.jpg',
+			        '/uploads/235.jpg',
+			        '/uploads/334.jpg',
+			        '/uploads/339.jpg',
+			        '/uploads/378.jpg',
+			        '/uploads/385.jpg',
+			        '/uploads/5652.jpg'
+			    ];
+			
+			    // 1. Preload all images immediately so transitions never lag
+			    images.forEach(url => {
+			        const img = new Image();
+			        img.src = url;
+			    });
+			
+			    const targets = document.querySelectorAll('.tbbg');
+			
+			    targets.forEach(target => {
+			        // Ensure container can position absolute children correctly
+			        if (getComputedStyle(target).position === 'static') {
+			            target.style.position = 'relative';
+			        }
+			
+			        // 2. Dynamically create two overlay layers inside your container
+			        const layer1 = document.createElement('div');
+			        const layer2 = document.createElement('div');
+			
+			        const layerStyle = `
+			            position: absolute;
+			            top: 0;
+			            left: 0;
+			            width: 100%;
+			            height: 100%;
+			            background-size: cover;
+			            background-position: center top;
+			            transition: opacity 1s ease-in-out;
+			            pointer-events: none;
+			        `;
+			
+			        layer1.style.cssText = layerStyle;
+			        layer2.style.cssText = layerStyle;
+			
+			        // Start layer 1 visible with the first image, layer 2 hidden
+			        layer1.style.backgroundImage = `url("${images[0]}")`;
+			        layer1.style.opacity = '1';
+			        layer2.style.opacity = '0';
+			
+			        target.appendChild(layer1);
+			        target.appendChild(layer2);
+			
+			        // 3. Run the crossfade loop
+			        let nextIndex = 1;
+			        let activeLayer = layer1;
+			        let hiddenLayer = layer2;
+			
+			        setInterval(() => {
+			            // Load the upcoming image into the hidden layer sitting underneath/above
+			            hiddenLayer.style.backgroundImage = `url("${images[nextIndex]}")`;
+			            
+			            // Crossfade opacities simultaneously
+			            hiddenLayer.style.opacity = '1';
+			            activeLayer.style.opacity = '0';
+			
+			            // Swap references for the next cycle
+			            const temp = activeLayer;
+			            activeLayer = hiddenLayer;
+			            hiddenLayer = temp;
+			
+			            nextIndex = (nextIndex + 1) % images.length;
+			        }, 4000); // Swaps image every 4 seconds (1s of crossfade + 3s hold)
+			    });
+			});
+		</script>
 	</body>
 </html>
