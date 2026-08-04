@@ -2,7 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	const hasSlick = document.querySelector(".slick-data, .slick-smart");
 
-	if (!hasSlick) runSlick();
+	if (!hasEACSS && !hasSlick) return;
+
+	const isIOS = /iP(ad|hone|od)/i.test(navigator.userAgent);
 
 	function runSlick() {
 		$(".slick-smart").each(function () {
