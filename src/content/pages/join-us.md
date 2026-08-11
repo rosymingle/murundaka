@@ -20,7 +20,7 @@ We’re excited that you’re considering membership in our vibrant and supporti
    Complete and return the CEHL new member application form. You will need to preference 'Metro North' and list 'Murundaka Cohousing Community' as your preferred co-op.
    <br><br>
 5. **CONTACT US**\
-   Contact us directly to let us know you are interested in joining our cohousing community by completing this EOI form.
+   Contact us directly to let us know you are interested in joining our cohousing community by completing [this EOI form](https://docs.google.com/forms/d/e/1FAIpQLScBY9x7eqm_sV2dJbD9u1NE6VZBuZpFvRf6xCJxto-Qw09mZQ/viewform).
    <br><br>
 6. **WAIT**\
    When we have a vacancy come up at Murundaka, we will contact suitable applicants and conduct interviews before we make an offer of housing.
